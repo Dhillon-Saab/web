@@ -1,0 +1,20 @@
+api key:
+19cd842e40d8bbd44aac807970dd29fd
+
+fonts:
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900$family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+icons:
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+
+api url:
+
+https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appis=${APIKey}
+
+ºC
+
+icons:
+https://openweathermap.org/img/wn.01n@2x.png
+
+background:
+https://source.unsplash.com/random/1600×900/?Landscape
