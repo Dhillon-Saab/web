@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url('back.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover{
+    color: pink;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navi{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcfcfc2b;
+    padding: 2em;
+    border-radius: 32px;
+    margin-top: 2em;
+}
+
+.navi .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navi .links{
+    display: flex;
+    gap: 2em;
+}
+
+.navi .toggle{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.drop{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 90px;
+    height: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.drop.o{
+    height: 180px;
+}
+
+.drop li{
+    padding: 0.7rem;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 992px){
+    .navi .links{
+        display: none;
+    }
+
+    .navi .toggle{
+        display: block;
+    }
+    .drop{
+        display: block  ;
+    }
+
+}
+
+@media(max-width: 576px){
+    .drop{
+        left: 2rem;
+        width: unset;
+    }
+}
+.dropdown{
+   text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+ 
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    height: 0px;
+    width: 150px;
+    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content li{
+   font-family: inherit;
+    word-spacing: 5px;
+}
+
+.dropdown-content.o{
+    height: 130px;
+    display: flex;
+}
+
+.dropdown:hover{
+     color: pink;
+    
+}
+

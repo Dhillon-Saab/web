@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navi">
+            <div class="logo"><a href="#">Dhillon's PC</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown"><span class="dropbtn1">Web Apps</span>
+                    <div class="dropdown-content ">
+                        <ui>
+                         <li><a href="Weatherapp">Weatherapp- 1</a></li>
+                         <br>
+                         <li><a href="WeatherAppDynamic/Home.html">Weatherapp- 2</a></li>
+                         <br>
+                         <li><a href="Clock/Clock.html">Clock</a></li>
+                        </ui>
+                      </div>
+                </div>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="unibis"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                </svg></i>
+            </div>
+        </div>
+
+        <div class="drop ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WeatherApp/index.html">WeatherApp</a></li>
+            <li><a href="Clock/Clock.html">Clock</a></li>
+            <li><a href="#">About</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Hello stranger welcome to Dhillon's site.</p>
+        </section>
+    </main>
+
+    <script>
+        const btn = document.querySelector('.toggle')
+        const btnicon = document.querySelector('.toggle i')
+        const dro = document.querySelector('.drop')
+
+        btn.onclick = function () {
+            dro.classList.toggle('o')}
+
+        const dropbutton = document.querySelector('.dropbtn1')
+        const dropmenu = document.querySelector('.dropdown-content')
+
+        dropbutton.onclick = function() {
+            dropmenu.classList.toggle('o')
+        }
+    
+    </script>
+</body>
+
+</html>
