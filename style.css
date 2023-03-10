@@ -12,6 +12,8 @@ body {
     background-image: url('back.jpg');
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
